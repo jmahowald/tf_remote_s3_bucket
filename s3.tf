@@ -39,3 +39,10 @@ output "arn" {
 output "name" {
   value = "${aws_s3_bucket.default.id}"
 }
+output "read_policy_arn" {
+  value = "${aws_iam_policy.s3-ro.arn}"
+}
+
+output "write_policy_arn" {
+  value = "${aws_iam_policy.s3-rw.arn}"
+}

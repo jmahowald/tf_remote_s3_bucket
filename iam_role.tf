@@ -1,4 +1,6 @@
-variable "env_fqdn" {}
+variable "env_fqdn" {
+  description = "The fqdn that will be prepended.  Current naming pattern is [dev|qa|prod].cd.code42.com"
+}
 
 resource "aws_iam_role" "s3-ro" {
   name = "terraform.${var.env_fqdn}-s3-ro"
