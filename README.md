@@ -5,7 +5,7 @@ Usage:
 
 Preview the changes to make
 
-`terraform plan --var env_fqdn=<myenv>.cd.code42.com`
+`terraform plan --var env_fqdn=$ENV.$DNS_BASE`
 
 Apply them
-`terraform apply --var env_fqdn=<myenv>.cd.code42.com`
+`terraform apply --var env_fqdn=$ENV.$DNS_BASE`
